@@ -17,6 +17,9 @@ public class StringCalculator {
 	
 	@Test
 	public void addSingleNum() {
-		assertEquals(MainStringCalculator.addSingleNum("3"),3);
+		assertEquals(MainStringCalculator.emptyString("3"),3);
+		assertEquals(MainStringCalculator.emptyString("42"),42);
 	}
+	
+	
 }
