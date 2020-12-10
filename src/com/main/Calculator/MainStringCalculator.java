@@ -1,8 +1,16 @@
 package com.main.Calculator;
 
+import Utils.Constants;
+
 public class MainStringCalculator {
 
-	public static int emptyString(String num) {
+	public static int emptyString(String num) throws Exception{
+		if(num.contains("-")) {
+		int indexOfNeg=num.indexOf(num, 0);
+		if(Character.isDigit(num.charAt(indexOfNeg+1))) {
+			throw new Exception(Constants.NEGATIVE_EXCEP_MSG);
+		}
+		}
 		if(num.isEmpty()) {
 		 return 0;
 		}
