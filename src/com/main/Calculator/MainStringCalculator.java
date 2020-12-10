@@ -10,13 +10,26 @@ public class MainStringCalculator {
 			if(num.contains("\n")) {
 				num=num.replace("\n", ",");
 			}
-			
 			int sum=0;
 			String[] nums=num.split(",");
 			for(int i=0;i<nums.length;i++) {
 				sum=sum+Integer.parseInt(nums[i]);
 			}
 			
+			return sum;
+		}
+		else if(!num.contains(",")&&num.length()>2){
+			int sum=0;
+			String num1="0,";
+			for(int i=0;i<num.length();i++) {
+				if(Character.isDigit(num.charAt(i))) {
+					num1=num1+num.charAt(i)+",";
+				}
+			}
+			String[] nums=num1.split(",");
+			for(int i=0;i<nums.length;i++) {
+				sum=sum+Integer.parseInt(nums[i]);
+			}
 			return sum;
 		}
 		else {

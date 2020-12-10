@@ -39,4 +39,9 @@ public class StringCalculator {
 		assertEquals(MainStringCalculator.emptyString("42\n8,89,1\n99"),239);
 		assertEquals(MainStringCalculator.emptyString("1\n2,3"),6);
 	}
+	
+	@Test
+	public void supportDiffDelimeters() {
+		assertEquals(MainStringCalculator.emptyString("//;\\n1;2"),3);
+	}
 }
