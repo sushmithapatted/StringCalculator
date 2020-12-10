@@ -49,4 +49,10 @@ public class StringCalculator {
 	public void checkNegative() throws Exception {
 		assertEquals(MainStringCalculator.emptyString("-1,2"),2);
 	}
+	
+	@Test
+	public void numGreaterThanThousand() throws Exception {
+		assertEquals(MainStringCalculator.emptyString("2,1001"),2);
+	}
+
 }

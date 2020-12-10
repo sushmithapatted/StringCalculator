@@ -21,7 +21,9 @@ public class MainStringCalculator {
 			int sum=0;
 			String[] nums=num.split(",");
 			for(int i=0;i<nums.length;i++) {
-				sum=sum+Integer.parseInt(nums[i]);
+				int no=Integer.parseInt(nums[i]);
+				if(no<=1000) {
+				sum=sum+no;}
 			}
 			
 			return sum;
