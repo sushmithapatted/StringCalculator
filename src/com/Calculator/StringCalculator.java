@@ -27,5 +27,11 @@ public class StringCalculator {
 		assertEquals(MainStringCalculator.emptyString("42,8"),50);
 	}
 	
+	@Test
+	public void addManyNum() {
+		assertEquals(MainStringCalculator.emptyString("3,3,7,8,0"),21);
+		assertEquals(MainStringCalculator.emptyString("42,8,89,1,99"),239);
+	}
+	
 	
 }
