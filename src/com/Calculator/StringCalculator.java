@@ -60,5 +60,8 @@ public class StringCalculator {
 		assertEquals(MainStringCalculator.emptyString("//[***]\\n1***2***3"),6);
 	}
 	
-	
+	@Test
+	public void multipleDelim() throws Exception {
+		assertEquals(MainStringCalculator.emptyString("//[*][%]\\n1*2%3"),6);
+	}
 }
