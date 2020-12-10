@@ -33,5 +33,10 @@ public class StringCalculator {
 		assertEquals(MainStringCalculator.emptyString("42,8,89,1,99"),239);
 	}
 	
-	
+	@Test
+	public void addNumsWithNewLines() {
+		assertEquals(MainStringCalculator.emptyString("3\n3,7\n8,0"),21);
+		assertEquals(MainStringCalculator.emptyString("42\n8,89,1\n99"),239);
+		assertEquals(MainStringCalculator.emptyString("1\n2,3"),6);
+	}
 }
