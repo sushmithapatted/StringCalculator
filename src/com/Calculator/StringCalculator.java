@@ -11,7 +11,12 @@ import com.main.Calculator.MainStringCalculator;
 public class StringCalculator {
 
 	@Test
-	public void sum0() {
-		assertEquals(MainStringCalculator.sum(""),0);
+	public void emptyString() {
+		assertEquals(MainStringCalculator.emptyString(""),0);
+	}
+	
+	@Test
+	public void addSingleNum() {
+		assertEquals(MainStringCalculator.addSingleNum("3"),3);
 	}
 }
