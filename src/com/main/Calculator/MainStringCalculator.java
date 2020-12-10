@@ -6,8 +6,16 @@ public class MainStringCalculator {
 		if(num.isEmpty()) {
 		 return 0;
 		}
-		else
+		else if(num.contains(",")){
+			int sum=0;
+			String[] nums=num.split(",");
+			sum=Integer.parseInt(nums[0])+Integer.parseInt(nums[1]);
+			return sum;
+		}
+		else {
 			return Integer.parseInt(num);
+		}
+			
 	}
 
 	

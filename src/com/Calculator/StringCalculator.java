@@ -21,5 +21,11 @@ public class StringCalculator {
 		assertEquals(MainStringCalculator.emptyString("42"),42);
 	}
 	
+	@Test
+	public void addTwoNum() {
+		assertEquals(MainStringCalculator.emptyString("3,3"),6);
+		assertEquals(MainStringCalculator.emptyString("42,8"),50);
+	}
+	
 	
 }
