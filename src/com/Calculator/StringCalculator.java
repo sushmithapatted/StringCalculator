@@ -55,4 +55,10 @@ public class StringCalculator {
 		assertEquals(MainStringCalculator.emptyString("2,1001"),2);
 	}
 
+	@Test
+	public void anylengthDelim() throws Exception {
+		assertEquals(MainStringCalculator.emptyString("//[***]\\n1***2***3"),6);
+	}
+	
+	
 }
